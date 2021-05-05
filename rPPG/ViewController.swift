@@ -18,6 +18,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     private var cameraInput: AVCaptureDeviceInput? = nil
     @IBOutlet weak var bpmValue: UILabel!
     private var cameraPos: AVCaptureDevice.Position = .front
+    private let respirationDetector = RespirationDetectorWrapper()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,7 +105,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         CVPixelBufferUnlockBaseAddress(imageBuffer, CVPixelBufferLockFlags.readOnly)
         let image = UIImage(cgImage: quartzImage)
         model.captureOutput(output, didOutputSampleBuffer: sampleBuffer, from: connection)
-        
+        // respirationDetector.detectRespiration(image)
         
         DispatchQueue.main.async {
             self.process(image)

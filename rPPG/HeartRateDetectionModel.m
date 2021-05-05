@@ -27,8 +27,6 @@ const int SECONDS = 90;
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
-    static int count=0;
-    count++;
     // only run if we're not already processing an image
     // this is the image buffer
     CVImageBufferRef cvimgRef = CMSampleBufferGetImageBuffer(sampleBuffer);

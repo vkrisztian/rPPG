@@ -12,11 +12,9 @@
 #import <UIKit/UIKit.h>
 #import "HeartRateDetectionModel.h"
 
-@interface HeartRateDetector : NSObject
+@interface RespirationDetectorWrapper : NSObject
 
-@property (nonatomic) HeartRateDetectionModel * heartRateDetectionModel;
-
-// - (UIImage *) detectFaces: (UIImage *) image;
+    - (void) detectRespiration: (UIImage *) image;
 
 @end
 #endif /* Header_h */

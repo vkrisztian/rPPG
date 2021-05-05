@@ -17,6 +17,7 @@
 		6F169346263B253800CC881A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F169344263B253800CC881A /* LaunchScreen.storyboard */; };
 		6F16935A263B283500CC881A /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F169359263B283500CC881A /* opencv2.framework */; };
 		6F169363263B291B00CC881A /* Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F169362263B291B00CC881A /* Wrapper.mm */; };
+		6F86DF632641F10C00E36318 /* RespirationDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F86DF612641F10C00E36318 /* RespirationDetector.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		6F16935C263B286C00CC881A /* rPPG-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rPPG-Bridging-Header.h"; sourceTree = "<group>"; };
 		6F169361263B28E400CC881A /* Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
 		6F169362263B291B00CC881A /* Wrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Wrapper.mm; sourceTree = "<group>"; };
+		6F86DF612641F10C00E36318 /* RespirationDetector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RespirationDetector.cpp; sourceTree = "<group>"; };
+		6F86DF622641F10C00E36318 /* RespirationDetector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RespirationDetector.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,19 +73,21 @@
 		6F169335263B253600CC881A /* rPPG */ = {
 			isa = PBXGroup;
 			children = (
-				6F094574263D86A20057EC8E /* HeartRateDetectionModel.m */,
-				6F094573263D86990057EC8E /* HeartRateDetectionModel.h */,
 				6F169336263B253600CC881A /* AppDelegate.swift */,
+				6F169342263B253800CC881A /* Assets.xcassets */,
+				6F094573263D86990057EC8E /* HeartRateDetectionModel.h */,
+				6F094574263D86A20057EC8E /* HeartRateDetectionModel.m */,
+				6F169347263B253800CC881A /* Info.plist */,
+				6F169344263B253800CC881A /* LaunchScreen.storyboard */,
+				6F16933C263B253600CC881A /* Main.storyboard */,
+				6F16935C263B286C00CC881A /* rPPG-Bridging-Header.h */,
+				6F16933F263B253600CC881A /* rPPG.xcdatamodeld */,
 				6F169338263B253600CC881A /* SceneDelegate.swift */,
 				6F16933A263B253600CC881A /* ViewController.swift */,
-				6F16933C263B253600CC881A /* Main.storyboard */,
-				6F169342263B253800CC881A /* Assets.xcassets */,
-				6F169344263B253800CC881A /* LaunchScreen.storyboard */,
-				6F169347263B253800CC881A /* Info.plist */,
-				6F16933F263B253600CC881A /* rPPG.xcdatamodeld */,
-				6F16935C263B286C00CC881A /* rPPG-Bridging-Header.h */,
 				6F169361263B28E400CC881A /* Wrapper.h */,
 				6F169362263B291B00CC881A /* Wrapper.mm */,
+				6F86DF612641F10C00E36318 /* RespirationDetector.cpp */,
+				6F86DF622641F10C00E36318 /* RespirationDetector.hpp */,
 			);
 			path = rPPG;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				6F169337263B253600CC881A /* AppDelegate.swift in Sources */,
 				6F169341263B253600CC881A /* rPPG.xcdatamodeld in Sources */,
 				6F169339263B253600CC881A /* SceneDelegate.swift in Sources */,
+				6F86DF632641F10C00E36318 /* RespirationDetector.cpp in Sources */,
 				6F169363263B291B00CC881A /* Wrapper.mm in Sources */,
 				6F094575263D86A20057EC8E /* HeartRateDetectionModel.m in Sources */,
 			);
